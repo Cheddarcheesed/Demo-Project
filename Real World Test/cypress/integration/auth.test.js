@@ -21,10 +21,10 @@ describe('Auth', () => {
         .should('contain', 'Sign up')
     })
 
-    it('should display error when submit an invalid form (password not match)', () => {
+    it.only('should display error when submit an invalid form (password not match)', () => {
       cy.intercept('POST', /users\/login/, {
         statusCode: 422,
-        body: { errors: { 'email or password': ['is invalid'] } },
+        body: { errors: { 'email or password': ['is invalid '] } },
       })
       cy.visit(ROUTES.LOGIN)
 

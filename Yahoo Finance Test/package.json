@@ -1,0 +1,21 @@
+{
+  "name": "yahoo-finance-test",
+  "version": "1.0.0",
+  "description": "Yahoo Finance Test",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [
+    "Cypress",
+    "Yahoo",
+    "Finance"
+  ],
+  "author": "Ajanda B",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.2",
+    "prettier": "^2.6.1"
+  }
+}
